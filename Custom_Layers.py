@@ -137,7 +137,7 @@ def perform_validataion(model, test, loss_object):
     return losses, val_acc_metrics
 
 
-num_epochs = 1
+num_epochs = 10
 epochs_val_losses, epochs_train_losses = [], []
 optimizer = tf.keras.optimizers.Adam()
 loss_object = tf.keras.losses.SparseCategoricalCrossentropy()
